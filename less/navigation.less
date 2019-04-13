@@ -6,6 +6,10 @@ nav {
         text-decoration: none;
         color: @nav-font;
     }
+
+    @media (max-width: @phone) {
+        .nav-mobile-mix();
+    }
 }
 div.title {
     display: flex;
