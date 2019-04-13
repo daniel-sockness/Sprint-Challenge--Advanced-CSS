@@ -1,0 +1,11 @@
+1. A adaptive website will attempt to scale to whatever screen size it is given.
+A fully responsive website is built to respond to any screen size.
+
+2. Mobile first means you build the website with mobile in mind first. 
+Desktop first means you design the website with desktop in mind.
+
+3. the font-size: 62.5% will set the default fontsize so that 1 rem equals 10px
+
+4. Preprocessing is a way of nesting your css to make it eaiser to read and add onto
+
+5. My favorite concept is nesting. The concept that gives me the most trouble is mixins
