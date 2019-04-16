@@ -265,6 +265,15 @@ footer {
   border-radius: 5px;
   font-size: 2rem;
 }
+.home .walk .walk-text .btn button:hover {
+  background-color: #161616;
+  width: 100px;
+  height: 35px;
+  color: #5E6164;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+}
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column;

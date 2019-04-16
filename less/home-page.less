@@ -76,7 +76,11 @@
 
       .btn {
         button {
-          .button-mix(@btn-background)
+          .button-mix(@btn-background);
+        }
+
+        button:hover {
+          .button-mix(@btn-bg-alt, @main-font-color);
         }
       }
     }
