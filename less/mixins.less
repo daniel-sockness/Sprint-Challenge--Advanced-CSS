@@ -1,1 +1,26 @@
 // Mixins Here
+
+.nav-mix() {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 25%;
+    color: #454A59;
+    border-bottom: 1px solid @nav-border;
+    background-color: @nav-bg;
+}
+
+.button-mix(@background: green, @color: white) {
+    background-color: @background;
+    width: 100px;
+    height: 35px;
+    color: @color;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.nav-mobile-mix() {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}

@@ -2,6 +2,7 @@
 
 .home {
 
+
   .intro {
 
     h2 {
@@ -12,6 +13,10 @@
       padding:0 15px;
     }
   
+    img {
+      border-radius: 5px;
+    }
+
   }
 
   .space-images {
@@ -24,6 +29,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media (max-width: @phone) {
+      justify-content: center;
+
+      img.sky, img.launch {
+        display: none;
+      }
+
+      img.blast {
+        width: 70%;
+      }
     }
   }
 
@@ -58,13 +75,41 @@
       }
 
       .btn {
+        button {
+          .button-mix(@btn-background);
+        }
+
+        button:hover {
+          .button-mix(@btn-bg-alt, @main-font-color);
+        }
+      }
+    }
+
+    @media (max-width: @phone) {
+      flex-direction: column;
+      h3 {
+        width: 100rem;
+      }
+
+      p {
+        width: 40rem;
+      }
+    }
+
+    .walk-img-mobile {
+      display: none;
+
+      @media (max-width: @phone) {
+        display: initial;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media (max-width: @phone) {
+        display: none;
+      }
       img {
         width: 100%;
         height: auto;
